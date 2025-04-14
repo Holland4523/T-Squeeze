@@ -49,7 +49,6 @@
       background: linear-gradient(135deg, #a8edea, #fed6e3);
       padding: 4rem 2rem;
       text-align: center;
-      position: relative;
     }
     
     header h1 {
@@ -64,7 +63,7 @@
       margin: 0 auto 2rem;
     }
     
-    /* CTA Form (Header) */
+    /* CTA Form */
     .cta {
       margin-top: 2rem;
     }
@@ -138,36 +137,6 @@
       font-size: 1.3rem;
     }
     
-    /* Kickstarter Launch Section */
-    .kickstarter {
-      background: #222;  /* Sleek dark background instead of an image */
-      color: #fff;
-      padding: 4rem 2rem;
-      text-align: center;
-      border-radius: 12px;
-      margin-top: 3rem;
-    }
-    
-    .kickstarter h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .kickstarter p {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    
-    .kickstarter .cta form {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    
     /* Footer */
     footer {
       background: #111;
@@ -186,10 +155,6 @@
       
       header h1 {
         font-size: 2.5rem;
-      }
-      
-      .kickstarter h2 {
-        font-size: 2rem;
       }
     }
   </style>
@@ -239,21 +204,315 @@
     </div>
   </section>
 
-  <!-- Kickstarter Launch Section -->
-  <section class="kickstarter">
-    <h2>Launching Soon on Kickstarter</h2>
-    <p>Back us early to be part of a cleaner, smarter tea ritual. Sign up now to get exclusive launch deals, updates, and more.</p>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 T-Squeeze. All rights reserved. | Designed for Kickstarter pre-launch</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | T-Squeeze</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Same Base Styles as index.html */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #111;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: #fff;
+      font-weight: 600;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    header {
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+    header p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="kickstarter.html">Kickstarter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <header>
+    <h1>About T-Squeeze</h1>
+    <p>Our mission is to revolutionize your tea ritual with cleaner brews, reducing waste and protecting your health.</p>
+  </header>
+
+  <section>
+    <p>T-Squeeze was designed to address the hidden dangers of microplastics in your tea, ensuring that every cup is pure. Our innovative design eliminates single-use waste while maintaining the full flavor of your favorite tea.</p>
+    <p>Driven by sustainability and cutting-edge engineering, we are committed to a cleaner and smarter future with every brew.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 T-Squeeze. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kickstarter | T-Squeeze</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Same Base Styles as index.html */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #111;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: #fff;
+      font-weight: 600;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+    header p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .cta form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .cta input[type="email"] {
+      padding: 1rem;
+      border: 2px solid #444;
+      width: 280px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .cta button {
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      color: #222;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .cta button:hover { background-color: #ccc; }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="kickstarter.html">Kickstarter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Kickstarter Header -->
+  <header>
+    <h1>Support Our Kickstarter</h1>
+    <p>Join us in launching T-Squeeze—your ticket to a cleaner and more sustainable tea ritual.</p>
+  </header>
+
+  <section>
+    <p>We are excited to launch our Kickstarter campaign soon. By supporting T-Squeeze, you help us bring this innovative, eco-friendly tea infuser to life.</p>
+    <p>Stay tuned for exclusive rewards, behind-the-scenes access, and much more as we gear up for our big launch.</p>
+    
     <div class="cta">
       <form action="https://formspree.io/f/mnnpwkwl" method="POST">
-        <input type="email" name="email" placeholder="Join the waitlist" required>
-        <button type="submit">Sign Up</button>
+        <input type="email" name="email" placeholder="Get launch updates" required>
+        <button type="submit">Notify Me</button>
       </form>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 T-Squeeze. All rights reserved. | Designed for Kickstarter pre-launch</p>
+    <p>&copy; 2025 T-Squeeze. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kickstarter | T-Squeeze</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Same Base Styles as index.html */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      background-color: #ffffff;
+      color: #111;
+      scroll-behavior: smooth;
+    }
+    nav {
+      background: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: #fff;
+      font-weight: 600;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #ffd700; }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; font-weight: 700; margin-bottom: 1rem; }
+    header p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem; }
+    section {
+      padding: 4rem 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .cta form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .cta input[type="email"] {
+      padding: 1rem;
+      border: 2px solid #444;
+      width: 280px;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .cta button {
+      padding: 1rem 1.5rem;
+      background-color: #fff;
+      color: #222;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .cta button:hover { background-color: #ccc; }
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="kickstarter.html">Kickstarter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Kickstarter Header -->
+  <header>
+    <h1>Support Our Kickstarter</h1>
+    <p>Join us in launching T-Squeeze—your ticket to a cleaner and more sustainable tea ritual.</p>
+  </header>
+
+  <section>
+    <p>We are excited to launch our Kickstarter campaign soon. By supporting T-Squeeze, you help us bring this innovative, eco-friendly tea infuser to life.</p>
+    <p>Stay tuned for exclusive rewards, behind-the-scenes access, and much more as we gear up for our big launch.</p>
+    
+    <div class="cta">
+      <form action="https://formspree.io/f/mnnpwkwl" method="POST">
+        <input type="email" name="email" placeholder="Get launch updates" required>
+        <button type="submit">Notify Me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 T-Squeeze. All rights reserved.</p>
   </footer>
 </body>
 </html>
