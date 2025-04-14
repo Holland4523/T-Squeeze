@@ -33,6 +33,12 @@
     .cta {
       margin-top: 1.5rem;
     }
+    .cta form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
     .cta input[type="email"] {
       padding: 0.8rem;
       border: 1px solid #ccc;
@@ -46,7 +52,6 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      margin-left: 0.5rem;
     }
     section {
       padding: 3rem 2rem;
@@ -69,13 +74,6 @@
     .feature h3 {
       margin-bottom: 0.8rem;
     }
-    .hero-image {
-      width: 100%;
-      max-width: 600px;
-      display: block;
-      margin: 2rem auto;
-      border-radius: 12px;
-    }
     .stat {
       background-color: #e0ffe0;
       padding: 1rem;
@@ -95,13 +93,14 @@
     <h1>No Microplastics. No Mess.</h1>
     <p>T-Squeeze is the reusable tea infuser that brews stronger, cleaner tea—without the waste or hidden plastics.</p>
     <div class="cta">
-      <input type="email" placeholder="Enter your email for early access">
-      <button>Notify Me</button>
+      <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXXXXXXXXX&amp;id=XXXXXXXXXX" method="post" target="_blank" novalidate>
+        <input type="email" name="EMAIL" placeholder="Enter your email for early access" required>
+        <button type="submit">Notify Me</button>
+      </form>
     </div>
   </header>
 
   <section>
-    <img src="https://via.placeholder.com/600x350.png?text=T-Squeeze+Infuser+Render" alt="T-Squeeze Product Render" class="hero-image">
     <div class="stat">
       <strong>You’ve been drinking microplastics with your tea — and no one told you.</strong><br>
       A 2019 study found that one plastic-based tea bag can release over <strong>11 billion microplastic particles</strong> into your cup.
@@ -128,8 +127,10 @@
     <h2>Launching Soon on Kickstarter</h2>
     <p>Be the first to support the clean-tea revolution. Join now for early-bird deals and exclusive updates.</p>
     <div class="cta">
-      <input type="email" placeholder="Join the waitlist">
-      <button>Sign Up</button>
+      <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXXXXXXXXX&amp;id=XXXXXXXXXX" method="post" target="_blank" novalidate>
+        <input type="email" name="EMAIL" placeholder="Join the waitlist" required>
+        <button type="submit">Sign Up</button>
+      </form>
     </div>
   </section>
 
