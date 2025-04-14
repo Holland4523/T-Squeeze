@@ -30,6 +30,17 @@
       font-size: 1.2rem;
       margin: 1rem 0;
     }
+    nav {
+      text-align: center;
+      background: #eaeaea;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: #444;
+    }
     .cta {
       margin-top: 1.5rem;
     }
@@ -89,12 +100,19 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="kickstarter.html">Kickstarter</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
   <header>
     <h1>No Microplastics. No Mess.</h1>
     <p>T-Squeeze is the reusable tea infuser that brews stronger, cleaner tea—without the waste or hidden plastics.</p>
     <div class="cta">
-      <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXXXXXXXXX&amp;id=XXXXXXXXXX" method="post" target="_blank" novalidate>
-        <input type="email" name="EMAIL" placeholder="Enter your email for early access" required>
+      <form action="https://formspree.io/f/mnnpwkwl" method="POST">
+        <input type="email" name="email" placeholder="Enter your email for early access" required>
         <button type="submit">Notify Me</button>
       </form>
     </div>
@@ -127,8 +145,8 @@
     <h2>Launching Soon on Kickstarter</h2>
     <p>Be the first to support the clean-tea revolution. Join now for early-bird deals and exclusive updates.</p>
     <div class="cta">
-      <form action="https://YOUR-USERNAME.usX.list-manage.com/subscribe/post?u=XXXXXXXXXXXX&amp;id=XXXXXXXXXX" method="post" target="_blank" novalidate>
-        <input type="email" name="EMAIL" placeholder="Join the waitlist" required>
+      <form action="https://formspree.io/f/mnnpwkwl" method="POST">
+        <input type="email" name="email" placeholder="Join the waitlist" required>
         <button type="submit">Sign Up</button>
       </form>
     </div>
