@@ -1,105 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>T-Squeeze | No Microplastics. No Mess.</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Reset & Base Styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
     }
+    
     body {
-      background-color: #fff;
-      color: #222;
+      font-family: 'Inter', sans-serif;
       line-height: 1.6;
+      scroll-behavior: smooth;
+      background-color: #ffffff;
+      color: #111;
     }
-    header {
-      background: #f5f5f5;
-      padding: 2rem;
-      text-align: center;
+    
+    a { 
+      text-decoration: none; 
     }
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 1rem 0;
-    }
+    
+    /* Navigation */
     nav {
-      text-align: center;
-      background: #eaeaea;
+      background: #111;
       padding: 1rem;
+      display: flex;
+      justify-content: center;
     }
+    
     nav a {
-      margin: 0 1rem;
-      text-decoration: none;
+      color: #fff;
       font-weight: 600;
-      color: #444;
+      margin: 0 1rem;
+      transition: color 0.3s;
     }
+    
+    nav a:hover { 
+      color: #ffd700; 
+    }
+    
+    /* Header Section */
+    header {
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    
+    header p {
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    
+    /* CTA Form (Header) */
     .cta {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
     }
+    
     .cta form {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 0.5rem;
     }
+    
     .cta input[type="email"] {
-      padding: 0.8rem;
-      border: 1px solid #ccc;
-      width: 250px;
-      border-radius: 6px;
+      padding: 1rem;
+      border: 2px solid #444;
+      width: 280px;
+      border-radius: 8px;
+      font-size: 1rem;
     }
+    
     .cta button {
-      padding: 0.8rem 1.2rem;
+      padding: 1rem 1.5rem;
       background-color: #111;
       color: white;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
     }
+    
+    .cta button:hover { 
+      background-color: #333; 
+    }
+    
+    /* Section Styles */
     section {
-      padding: 3rem 2rem;
-      max-width: 900px;
+      padding: 4rem 2rem;
+      max-width: 1200px;
       margin: auto;
     }
+    
+    .stat {
+      background-color: #e0ffe0;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-left: 6px solid green;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    
+    /* Features Grid */
     .features {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: center;
       gap: 2rem;
     }
+    
     .feature {
-      flex: 1 1 250px;
-      background: #f0f0f0;
-      padding: 1.5rem;
-      border-radius: 10px;
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       text-align: center;
+      flex: 1 1 280px;
+      max-width: 350px;
     }
+    
     .feature h3 {
       margin-bottom: 0.8rem;
+      font-size: 1.3rem;
     }
-    .stat {
-      background-color: #e0ffe0;
-      padding: 1rem;
-      margin: 2rem 0;
-      border-left: 6px solid green;
+    
+    /* Kickstarter Launch Section */
+    .kickstarter {
+      background: #222;  /* Sleek dark background instead of an image */
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: 12px;
+      margin-top: 3rem;
     }
+    
+    .kickstarter h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .kickstarter p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .kickstarter .cta form {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    /* Footer */
     footer {
+      background: #111;
+      color: #aaa;
       text-align: center;
       padding: 2rem;
       font-size: 0.9rem;
-      color: #777;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      header h1 {
+        font-size: 2.5rem;
+      }
+      
+      .kickstarter h2 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -107,43 +203,46 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <!-- Header Section -->
   <header>
     <h1>No Microplastics. No Mess.</h1>
-    <p>T-Squeeze is the reusable tea infuser that brews stronger, cleaner tea—without the waste or hidden plastics.</p>
+    <p>T-Squeeze is the sleek, reusable tea infuser that filters out harmful microplastics and brews cleaner, stronger tea—without the waste or cleanup.</p>
     <div class="cta">
       <form action="https://formspree.io/f/mnnpwkwl" method="POST">
-        <input type="email" name="email" placeholder="Enter your email for early access" required>
+        <input type="email" name="email" placeholder="Get early access" required>
         <button type="submit">Notify Me</button>
       </form>
     </div>
   </header>
 
+  <!-- Information Section -->
   <section>
     <div class="stat">
       <strong>You’ve been drinking microplastics with your tea — and no one told you.</strong><br>
-      A 2019 study found that one plastic-based tea bag can release over <strong>11 billion microplastic particles</strong> into your cup.
+      A 2019 study found that a single plastic-based tea bag can release over <strong>11 billion microplastic particles</strong> into your cup.
     </div>
-
-    <h2>Why T-Squeeze?</h2>
+    
+    <h2 style="text-align:center; margin-bottom:2rem;">Why Choose T-Squeeze?</h2>
     <div class="features">
       <div class="feature">
         <h3>Zero Microplastics</h3>
-        <p>No more plastic leaching into your brew. Just pure, clean tea the way it should be.</p>
+        <p>Filters hidden plastics out of your tea. Just pure leaves and full flavor.</p>
       </div>
       <div class="feature">
-        <h3>Reusable & Sustainable</h3>
-        <p>One T-Squeeze replaces hundreds of disposable tea bags. Good for you, better for the planet.</p>
+        <h3>Reusable &amp; Eco-Safe</h3>
+        <p>Designed to eliminate single-use waste. One T-Squeeze can replace hundreds of tea bags.</p>
       </div>
       <div class="feature">
-        <h3>Stronger Brew</h3>
-        <p>Engineered for better flavor extraction while keeping cleanup quick and easy.</p>
+        <h3>Bold, Clean Brew</h3>
+        <p>Engineered for maximum flavor extraction with zero mess. Rinse and reuse instantly.</p>
       </div>
     </div>
   </section>
 
-  <section>
+  <!-- Kickstarter Launch Section -->
+  <section class="kickstarter">
     <h2>Launching Soon on Kickstarter</h2>
-    <p>Be the first to support the clean-tea revolution. Join now for early-bird deals and exclusive updates.</p>
+    <p>Back us early to be part of a cleaner, smarter tea ritual. Sign up now to get exclusive launch deals, updates, and more.</p>
     <div class="cta">
       <form action="https://formspree.io/f/mnnpwkwl" method="POST">
         <input type="email" name="email" placeholder="Join the waitlist" required>
@@ -152,8 +251,9 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 T-Squeeze. All rights reserved. | Kickstarter pre-launch</p>
+    <p>&copy; 2025 T-Squeeze. All rights reserved. | Designed for Kickstarter pre-launch</p>
   </footer>
 </body>
 </html>
